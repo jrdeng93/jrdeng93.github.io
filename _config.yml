@@ -1,0 +1,64 @@
+title: Jieren-Site
+author: Jieren Deng
+email: jrdengapr@gmail.com
+description: > # this means to ignore newlines until "show_exerpts:"
+  Jieren Deng's personal site
+show_excerpts: true # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+sass:
+  sass_dir: _sass
+plainwhite:
+  name: Jieren Deng (邓杰仁)
+  tagline: CSE Ph.D. Student, University of Connecticut
+  date_format: "%b %-d, %Y"
+  sitemap: true # set to true to generate sitemap.xml content
+  search: true # set to true to enable searchbar
+  dark_mode: true # set to true to add dark mode toggle
+  portfolio_image: "assets/portfolio.png" # the path from the base directory of the site to the image to display (no / at the start)
+  html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
+  condensed_mobile:
+    #- home
+    - page
+    - post
+  # generate social links in footer
+  analytics_id: "G-VT144JCBNR"
+  social_links:
+#     twitter: samarsault
+#     github:  samarsault
+    linkedIn: "in/jieren-deng-7a745a127/"
+    #dribbble: jekyll
+    #flickr:   jekyll
+    #instagram: jekyll
+    #pinterest: jekyll
+    #youtube: jekyll
+    #facebook: jekyll
+    #soundcloud: jekyll
+    #telegram: jekyll
+    #gitlab: jekyll
+    email: jrdengapr@gmail.com
+  navigation:
+    - title: Google Scholar
+      url: "https://scholar.google.com/citations?user=X11hfvIAAAAJ&hl=en"
+    - title: Resume
+      url: "https://drive.google.com/file/d/1E1dREHOvIeVAl2S0oodd75wKPmtcOL4J/view?usp=sharing"
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+  - about.md
+
+# Build settings
+theme: plainwhite
+remote_theme: samarsault/plainwhite-jekyll
+plugins:
+  - jekyll-seo-tag
+#  - jekyll-feed
