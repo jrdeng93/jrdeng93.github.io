@@ -37,7 +37,7 @@ plainwhite:
     #soundcloud: jekyll
     #telegram: jekyll
     #gitlab: jekyll
-#     email: jrdengapr@gmail.com
+    email: jrdengapr@gmail.com
   navigation:
     - title: Google Scholar
       url: "https://scholar.google.com/citations?user=X11hfvIAAAAJ&hl=en"
