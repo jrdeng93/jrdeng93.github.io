@@ -1,64 +1,322 @@
-title: Jieren-Site
-author: Jieren Deng
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+
+title: Jieren Deng # the website title (if blank, full name will be used instead)
+first_name: Jieren
+middle_name: 
+last_name: Deng
 email: jrdengapr@gmail.com
-description: > # this means to ignore newlines until "show_exerpts:"
-  Jieren Deng's personal site
-show_excerpts: true # set to true to show excerpts on the homepage
+description: > # the ">" symbol means to ignore newlines until "footer_text:"
+  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
 
-# Minima date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-sass:
-  sass_dir: _sass
-plainwhite:
-  name: Jieren Deng (邓杰仁)
-  tagline: CSE Ph.D. Student, University of Connecticut
-  date_format: "%b %-d, %Y"
-  sitemap: true # set to true to generate sitemap.xml content
-  search: true # set to true to enable searchbar
-  dark_mode: true # set to true to add dark mode toggle
-  portfolio_image: "assets/portfolio.png" # the path from the base directory of the site to the image to display (no / at the start)
-  html_lang: "en" # set the lang attribute of the <html> tag for the pages. See here for a list of codes: https://www.w3schools.com/tags/ref_country_codes.asp
-  condensed_mobile:
-    #- home
-    - page
-    - post
-  # generate social links in footer
-  analytics_id: "G-VT144JCBNR"
-  social_links:
-#     twitter: samarsault
-#     github:  samarsault
-    linkedIn: "in/jieren-deng-7a745a127/"
-    #dribbble: jekyll
-    #flickr:   jekyll
-    #instagram: jekyll
-    #pinterest: jekyll
-    #youtube: jekyll
-    #facebook: jekyll
-    #soundcloud: jekyll
-    #telegram: jekyll
-    #gitlab: jekyll
-    email: jrdengapr@gmail.com
-  navigation:
-    - title: Google Scholar
-      url: "https://scholar.google.com/citations?user=X11hfvIAAAAJ&hl=en"
-    - title: CV
-      url: "https://drive.google.com/file/d/1E1dREHOvIeVAl2S0oodd75wKPmtcOL4J/view?usp=sharing"
+lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+icon: 🦏  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
+url: https://alshedivat.github.io # the base hostname & protocol for your site
+baseurl:  # the subpath of your site, e.g. /blog/
+last_updated: false # set to true if you want to display last updated in the footer
+impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-header_pages:
-  - about.md
+# -----------------------------------------------------------------------------
+# RSS Feed
+# -----------------------------------------------------------------------------
+# will use title and url fields
+# Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-# Build settings
-# theme: plainwhite
-# remote_theme: samarsault/plainwhite-jekyll
+rss_icon: false
+
+# -----------------------------------------------------------------------------
+# Layout
+# -----------------------------------------------------------------------------
+
+navbar_fixed: true
+footer_fixed: true
+
+# Dimensions
+max_width: 800px
+
+# TODO: add layout settings (single page vs. multi-page)
+
+# -----------------------------------------------------------------------------
+# Open Graph & Schema.org
+# -----------------------------------------------------------------------------
+# Display links to the page with a preview object on social media.
+serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_schema_org: false # Include Schema.org in the HTML head
+og_image: # The site-wide (default for all links) Open Graph preview image
+
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+
+github_username: # your GitHub user name
+gitlab_username: # your GitLab user name
+twitter_username: # your Twitter handle
+linkedin_username: # your LinkedIn user name
+scholar_userid: X11hfvIAAAAJ&hl
+orcid_id: # your ORCID ID
+medium_username: # your Medium username
+quora_username: # your Quora username
+publons_id: # your ID on Publons
+research_gate_profile: # your profile on ResearchGate
+blogger_url: # your blogger URL
+work_url: # work page URL
+keybase_username: # your keybase user name
+wikidata_id: # your wikidata id
+dblp_url: # your DBLP profile url
+stackoverflow_id: #your stackoverflow id
+
+contact_note: >
+ 
+
+google_analytics:  # your google-analytics ID (format: UA-XXXXXXXXX)
+google_site_verification:  # your google-site-verification ID (Google Search Console)
+bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
+panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
+
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+
+# blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
+# blog_description: a simple whitespace theme for academics
+# permalink: /blog/:year/:title/
+
+# # Pagination
+# pagination:
+#   enabled: false
+
+# # Comments
+# disqus_shortname: al-folio # put your disqus shortname
+# # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+
+# # External sources.
+# # If you have blog posts published on medium.com or other exteranl sources,
+# # you can display them in your blog by adding a link to the RSS feed.
+# external_sources:
+#   - name: medium.com
+#     rss_url: https://medium.com/@al-folio/feed
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+news_limit: 50
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
+
+# Markdown and syntax highlight
+markdown: kramdown
+highlighter: rouge
+highlight_theme_light: github  # https://github.com/jwarby/jekyll-pygments-themes
+highlight_theme_dark: native  # https://github.com/jwarby/jekyll-pygments-themes
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+# Includes & excludes
+include: ['_pages']
+exclude:
+  - bin
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+keep_files:
+  - CNAME
+  - .nojekyll
+  - .git
+
+# Plug-ins
 plugins:
-  - jekyll-seo-tag
-#  - jekyll-feed
+  - jekyll-archives
+  - jekyll-diagrams
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-github-metadata
+  - jekyll-imagemagick
+  - jekyll-paginate-v2
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-target-blank
+  - jekyll-twitter-plugin
+  - jemoji
+
+# Sitemap settings
+defaults:
+  - scope:
+      path: "assets/**/*.*"
+    values:
+      sitemap: false
+# Extras
+github: [metadata]
+
+# -----------------------------------------------------------------------------
+# Jekyll optimization
+# -----------------------------------------------------------------------------
+
+# HTML remove comments (<!-- .... -->)
+remove_HTML_comments: false
+
+# HTML beautifier (_plugins/beautify.rb).
+# Source: https://github.com/threedaymonk/htmlbeautifier
+beautify: false # This function has conflict with the code snippets, they can be displayed incorrectly
+
+# HTML minify (_plugins/minify.rb).
+# Source: https://www.ffbit.com/blog/2021/03/17/html-minification-in-jekyll.html
+minify: false
+
+# CSS/SASS minify
+sass:
+  style: compressed
+
+# -----------------------------------------------------------------------------
+# Jekyll Archives
+# -----------------------------------------------------------------------------
+
+jekyll-archives:
+  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+  layouts:
+    year: archive-year
+    tag: archive-tag
+    category: archive-category
+  permalinks:
+    year: '/blog/:year/'
+    tag: '/blog/tag/:name/'
+    category: '/blog/category/:name/'
+
+# -----------------------------------------------------------------------------
+# Jekyll Scholar
+# -----------------------------------------------------------------------------
+
+scholar:
+
+  last_name: Einstein
+  first_name: [Albert, A.]
+
+  style: apa
+  locale: en
+
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  # Note: if you have latex math in your bibtex, the latex filter
+  # preprocessing may conflict with MathJAX if the latter is enabled.
+  # See https://github.com/alshedivat/al-folio/issues/357.
+  bibtex_filters: [latex, smallcaps, superscript]
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
+
+# -----------------------------------------------------------------------------
+# Responsive WebP Images
+# -----------------------------------------------------------------------------
+
+imagemagick:
+  enabled: true
+  widths:
+    - 480
+    - 800
+    - 1400
+  input_directories:
+    - assets/img/
+  input_formats:
+    - ".jpg"
+    - ".jpeg"
+    - ".png"
+    - ".tiff"
+  output_formats:
+    webp: "-quality 75%"
+
+# -----------------------------------------------------------------------------
+# Jekyll Diagrams
+# -----------------------------------------------------------------------------
+
+jekyll-diagrams:
+    # configuration, see https://github.com/zhustec/jekyll-diagrams.
+    # feel free to comment out this section if not using jekyll diagrams.
+
+
+# -----------------------------------------------------------------------------
+# Optional Features
+# -----------------------------------------------------------------------------
+
+enable_google_analytics:    true  # enables google analytics
+enable_panelbear_analytics: false  # enables panelbear analytics
+enable_google_verification: false  # enables google site verification
+enable_bing_verification:   false  # enables bing site verification
+enable_masonry:             true   # enables automatic project cards arangement
+enable_math:                true   # enables math typesetting (uses MathJax)
+enable_tooltips:            false  # enables automatic tooltip links generated
+                                   # for each section titles on pages and posts
+enable_darkmode:            true   # enables switching between light/dark modes
+enable_navbar_social:       false  # enables displaying social links in the
+                                   # navbar on the about page
+enable_project_categories:  true   # enables categorization of projects into
+                                   # multiple categories
+enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
+
+
+# -----------------------------------------------------------------------------
+# Library versions
+# -----------------------------------------------------------------------------
+
+academicons:
+  version: "1.9.1"
+  integrity: "sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg="
+bootstrap:
+  version: "4.6.1"
+  integrity:
+    css: "sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY="
+    js: "sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI="
+fontawesome:
+  version: "5.15.4"
+  integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
+jquery:
+  version: "3.6.0"
+  integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+mathjax:
+  version: "3.2.0"
+masonry:
+  version: "4.2.2"
+  integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
+mdb:
+  version: "4.20.0"
+  integrity:
+    css: "sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw="
+    js: "sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA="
+popper:
+  version: "2.11.2"
+  integrity: "sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4="
+medium_zoom:
+  version: "1.0.6"
+  integrity: "sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM="
