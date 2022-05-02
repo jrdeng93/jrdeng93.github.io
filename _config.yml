@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Jieren Deng # the website title (if blank, full name will be used instead)
+title: Jieren Deng (邓杰仁) # the website title (if blank, full name will be used instead)
 first_name: Jieren
 middle_name: 
 last_name: Deng
@@ -57,7 +57,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
+linkedin_username: jieren-deng-7a745a127
 scholar_userid: X11hfvIAAAAJ&hl
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
