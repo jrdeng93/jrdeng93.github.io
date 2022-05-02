@@ -6,7 +6,7 @@ subtitle: <a href='https://uconn.edu'>University of Connecticut</a> <a href='htt
   <p>371 Fairfield Way, Unit 4155, Storrs, CT 06269-4155, U.S.</p>
 profile:
   align: right
-  image: prof_pic.jpg
+  image: IMG_7825.JPG
   address: >
     <p>what doesn't kill you makes you stronger</p>
 
