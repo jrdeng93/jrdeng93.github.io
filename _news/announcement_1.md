@@ -1,7 +1,6 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2020-06-07 16:11:00-0400
 inline: true
 ---
-
-A simple inline announcement.
+<a href="https://academic.oup.com/bib/article-abstract/22/3/bbaa090/5860679"><i>iPRIVATES</i></a> is accepted by <b>Briefings in Bioinformatics</b> in 2020
