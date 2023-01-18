@@ -15,10 +15,12 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-<p>I am a Ph.D. student in <a href="https://www.cse.uconn.edu"><b><i>Department of Computer Science and Engineering</i></b></a> at <a href="https://uconn.edu"><b><i>University of Connecticut</i></b></a> advised by Professor <a href="https://www.derekaguiar.com/"><b><i>Derek Aguiar</i></b></a>. I obtained my B.S. degree from <a href="https://www.qmul.ac.uk"><b><i>Queen Mary University of London</i></b></a> and B.A. degree from <a href="https://english.bupt.edu.cn"><b><i>Beijing University of Posts and Telecommunications</i></b></a> in 2016 and M.S. degree from <a href="https://www.utdallas.edu"><b><i>University of Texas at Dallas</i></b></a> in 2018.</p>
+<p>I am a Ph.D. student in <a href="https://www.cse.uconn.edu"><b><i>Department of Computer Science and Engineering</i></b></a> at <a href="https://uconn.edu"><b><i>University of Connecticut</i></b></a> advised by Professor <a href="https://www.derekaguiar.com/"><b><i>Derek Aguiar</i></b></a> in <a href="https://bayesomicslab.github.io/"><b><i>EL GATO Lab</i></b></a>. I obtained my B.Sc. degree from <a href="https://www.qmul.ac.uk"><b><i>Queen Mary University of London</i></b></a> and B.A. degree from <a href="https://english.bupt.edu.cn"><b><i>Beijing University of Posts and Telecommunications</i></b></a> in 2016 and M.S. degree from <a href="https://www.utdallas.edu"><b><i>University of Texas at Dallas</i></b></a> in 2018.</p>
+
 <p>My CV can be found <a href="https://drive.google.com/file/d/1E1dREHOvIeVAl2S0oodd75wKPmtcOL4J/view">here</a></p>
-<h4>Research interests</h4>
+<h4>research interests</h4>
 <ul>
+  <li><b>Up To Date Techs</b> (e.g., Diffusion Model)</li>
   <li><b>Security & Privacy in Machine Learning</b> (e.g., Gradient Attack, Reconstruction Attack)</li>
   <li><b>Privacy-Preserving Machine Learning</b> (e.g., Differential Privacy, MPC and TEE)</li>
   <li><b>Efficient AI</b> (e.g., Knowledge Distillation, Weight Pruning and Quantization)</li>
