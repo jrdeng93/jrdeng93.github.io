@@ -1,13 +1,4 @@
----
-layout: page
-permalink: /teaching/
-title: Teaching Assistant
-description: 
-nav: True
----
-
-
-<ul>
+I"><ul>
 
   <li><b>CSE 2102 Introduction to Software Engineering (2021 Fall).</b> </li>
   <li><b>CSE 1010 Introduction to Computing for Engineers (2022 Spring).</b></li>
@@ -15,3 +6,4 @@ nav: True
   <li><b>CSE 3500 Algorithms and Complexity (2023 Fall).</b> </li>
 
 </ul>
+:ET

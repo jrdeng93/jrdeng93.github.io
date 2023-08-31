@@ -20,7 +20,7 @@ social: true  # includes social icons at the bottom of the page
 <p>My CV can be found <a href="https://drive.google.com/file/d/1E1dREHOvIeVAl2S0oodd75wKPmtcOL4J/view">here</a></p>
 <h4>research interests</h4>
 <ul>
-  <li><b>Up To Date Techs</b> (e.g., Diffusion Model)</li>
+  <li><b>Generative & Multimodal AI</b> (e.g., Diffusion Model, GPT, Llama and Zero/Few-shot foundation models)</li>
   <li><b>Security & Privacy in Machine Learning</b> (e.g., Gradient Attack, Reconstruction Attack)</li>
   <li><b>Privacy-Preserving Machine Learning</b> (e.g., Differential Privacy, MPC and TEE)</li>
   <li><b>Efficient AI</b> (e.g., Knowledge Distillation, Weight Pruning and Quantization)</li>
