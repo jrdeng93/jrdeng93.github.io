@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
+# in your Gemfile
+
 group :jekyll_plugins do
-    gem 'jekyll'
+    gem "jekyll", github: "jekyll/jekyll", ref: "refs/pull/9248/head"
     gem 'jekyll-archives'
     gem 'jekyll-diagrams'
     gem 'jekyll-email-protect'
