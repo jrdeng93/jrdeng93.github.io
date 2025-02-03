@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 # in your Gemfile
 
 group :jekyll_plugins do
-    gem "jekyll", "~> 4.2.0"
+    gem "jekyll", "~> 4.2.2"
     gem 'jekyll-archives'
     gem 'jekyll-diagrams'
     gem 'jekyll-email-protect'
