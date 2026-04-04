@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 description: 
-years: [2020,2021,2022]
+years: [2026, 2025, 2021, 2020]
 nav: true
 ---
 <!-- _pages/publications.md -->

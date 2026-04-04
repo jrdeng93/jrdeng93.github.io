@@ -30,15 +30,282 @@ body.sticky-bottom-footer {
 .profile {
   img {
     width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
   }
 }
 
-// TODO: redefine content layout.
+// Post header improvements
+.post-header {
+  margin-bottom: 2rem;
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--global-theme-color), var(--global-theme-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+  }
+  
+  .desc {
+    font-size: 1.1rem;
+    color: var(--global-text-color-light);
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+  }
+}
 
+// Top social icons (in header)
+.top-social {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  
+  .contact-icons {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      background-color: var(--global-card-bg-color);
+      border-radius: 50%;
+      color: var(--global-theme-color);
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      
+      &:hover {
+        background-color: var(--global-theme-color);
+        color: var(--global-bg-color);
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+      
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
 
-/******************************************************************************
- * Publications
- ******************************************************************************/
+// CV Button in header
+.cv-button-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--global-theme-color);
+  color: var(--global-bg-color);
+  border-radius: 25px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  
+  i {
+    font-size: 1.1rem;
+  }
+  
+  &:hover {
+    background-color: var(--global-card-bg-color);
+    color: var(--global-theme-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// News styling enhancements
+.news {
+  margin: 2rem 0;
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 3rem;
+      height: 3px;
+      background: var(--global-theme-color);
+      border-radius: 2px;
+    }
+  }
+  
+  .table-responsive {
+    table {
+      margin-top: 0;
+      
+      tr {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+        border-radius: 8px;
+        background-color: var(--global-card-bg-color);
+        border-left: 3px solid var(--global-theme-color);
+        transition: all 0.2s ease;
+        
+        &:hover {
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+          transform: translateX(4px);
+        }
+        
+        th {
+          font-size: 0.9rem;
+          color: var(--global-theme-color);
+          font-weight: 600;
+          min-width: 80px;
+          flex-shrink: 0;
+          margin-right: 1rem;
+        }
+        
+        td {
+          flex-grow: 1;
+          font-size: 0.95rem;
+          line-height: 1.5;
+          
+          a {
+            color: var(--global-theme-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            
+            &:hover {
+              color: var(--global-hover-color);
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Selected papers styling
+.selected-papers {
+  margin: 2rem 0;
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 3rem;
+      height: 3px;
+      background: var(--global-theme-color);
+      border-radius: 2px;
+    }
+  }
+}
+
+// Address styling
+.address {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--global-text-color-light);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+// Social section improvements
+.social {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--global-divider-color);
+  
+  .contact-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      background-color: var(--global-card-bg-color);
+      border-radius: 50%;
+      color: var(--global-theme-color);
+      transition: all 0.2s ease;
+      
+      &:hover {
+        background-color: var(--global-theme-color);
+        color: var(--global-bg-color);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+  
+  .contact-note {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+    line-height: 1.6;
+  }
+}
+
+// CV Button styling
+.cv-button-wrapper {
+  margin: 1.5rem 0 2rem 0;
+  
+  .cv-button {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, var(--global-theme-color), var(--global-theme-color));
+    color: var(--global-bg-color);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid var(--global-theme-color);
+    
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      border-bottom: 3px solid var(--global-theme-color);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+    
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
 
 // TODO: redefine publications layout.
 

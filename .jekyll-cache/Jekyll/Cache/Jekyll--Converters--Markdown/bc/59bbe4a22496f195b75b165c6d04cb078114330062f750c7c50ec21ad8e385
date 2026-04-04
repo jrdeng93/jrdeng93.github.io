@@ -1,26 +1,27 @@
-I"è/<!-- _pages/publications.md -->
+I"ß6<!-- _pages/publications.md -->
 <div class="publications">
-  <h2 class="year">2020</h2>
+  <h2 class="year">2026</h2>
   <ol class="bibliography"><li><!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">SOCC</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">CVPR</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="9524757" class="col-sm-8">
+        <div id="deng2025imaia" class="col-sm-8">
         
           <!-- Title -->
-          <div class="title">A DNN Compression Framework for SOT-MRAM-based Processing-In-Memory Engine</div>
+          <div class="title">IMAIA: Interactive Maps AI Assistant for Travel Planning and Geo-Spatial Intelligence</div>
           <!-- Author -->
-          <div class="author">Yuan, Geng,&nbsp;Ma, Xiaolong,&nbsp;Lin, Sheng,&nbsp;Li, Zhengang,&nbsp;Deng, Jieren,&nbsp;and Ding, Caiwen
+          <div class="author">Deng, Jieren,&nbsp;Hu, Zhizhang,&nbsp;He, Ziyan,&nbsp;Cvetkovic, Aleksandar,&nbsp;Chung, Pak Kiu,&nbsp;Yankov, Dragomir,&nbsp;and Zhang, Chiqun
           </div>
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em>In 2020 IEEE 33rd International System-on-Chip Conference (SOCC)</em> 2020
+            2026
           </div>
         
           <!-- Links/Buttons -->
           <div class="links">
+            <a href="https://arxiv.org/pdf/2507.06993" class="btn btn-sm z-depth-0" role="button">PDF</a>
           </div>
 
           
@@ -29,46 +30,20 @@
 </li>
 <li><!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS SpicyFL</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">FSE</abbr></div>
 
         <!-- Entry bib key -->
-        <div id="https://doi.org/10.48550/arxiv.2009.01867" class="col-sm-8">
+        <div id="deng2026fse" class="col-sm-8">
         
           <!-- Title -->
-          <div class="title">ESMFL: Efficient and Secure Models for Federated Learning</div>
+          <div class="title">An Agentic Framework for Triaging Incidents in Production Cloud Infrastructure</div>
           <!-- Author -->
-          <div class="author">Lin, Sheng,&nbsp;Wang, Chenghong,&nbsp;Li, Hongjia,&nbsp;Deng, Jieren,&nbsp;Wang, Yanzhi,&nbsp;and Ding, Caiwen
+          <div class="author">Deng, Jieren,&nbsp;and others, 
           </div>
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            2020
-          </div>
-        
-          <!-- Links/Buttons -->
-          <div class="links">
-          </div>
-
-          
-        </div>
-      </div>
-</li>
-<li><!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
-
-        <!-- Entry bib key -->
-        <div id="https://doi.org/10.48550/arxiv.2009.06228" class="col-sm-8">
-        
-          <!-- Title -->
-          <div class="title">SAPAG: A Self-Adaptive Privacy Attack From Gradients</div>
-          <!-- Author -->
-          <div class="author">Wang, Yijue,&nbsp;Deng, Jieren,&nbsp;Guo, Dan,&nbsp;Wang, Chenghong,&nbsp;Meng, Xianrui,&nbsp;Liu, Hang,&nbsp;Ding, Caiwen,&nbsp;and Rajasekaran, Sanguthevar
-          </div>
-
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
-            2020
+            <em>In Proceedings of the 2026 ACM Conference on Foundations of Software Engineering</em> 2026
           </div>
         
           <!-- Links/Buttons -->
@@ -79,6 +54,9 @@
         </div>
       </div>
 </li></ol>
+
+  <h2 class="year">2025</h2>
+  <ol class="bibliography"></ol>
 
   <h2 class="year">2021</h2>
   <ol class="bibliography"><li><!-- _layouts/bib.html -->
@@ -227,8 +205,85 @@
       </div>
 </li></ol>
 
-  <h2 class="year">2022</h2>
-  <ol class="bibliography"></ol>
+  <h2 class="year">2020</h2>
+  <ol class="bibliography"><li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">SOCC</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="9524757" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">A DNN Compression Framework for SOT-MRAM-based Processing-In-Memory Engine</div>
+          <!-- Author -->
+          <div class="author">Yuan, Geng,&nbsp;Ma, Xiaolong,&nbsp;Lin, Sheng,&nbsp;Li, Zhengang,&nbsp;Deng, Jieren,&nbsp;and Ding, Caiwen
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In 2020 IEEE 33rd International System-on-Chip Conference (SOCC)</em> Nov 2020
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">NeurIPS SpicyFL</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="https://doi.org/10.48550/arxiv.2009.01867" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">ESMFL: Efficient and Secure Models for Federated Learning</div>
+          <!-- Author -->
+          <div class="author">Lin, Sheng,&nbsp;Wang, Chenghong,&nbsp;Li, Hongjia,&nbsp;Deng, Jieren,&nbsp;Wang, Yanzhi,&nbsp;and Ding, Caiwen
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            Nov 2020
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"></div>
+
+        <!-- Entry bib key -->
+        <div id="https://doi.org/10.48550/arxiv.2009.06228" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">SAPAG: A Self-Adaptive Privacy Attack From Gradients</div>
+          <!-- Author -->
+          <div class="author">Wang, Yijue,&nbsp;Deng, Jieren,&nbsp;Guo, Dan,&nbsp;Wang, Chenghong,&nbsp;Meng, Xianrui,&nbsp;Liu, Hang,&nbsp;Ding, Caiwen,&nbsp;and Rajasekaran, Sanguthevar
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            Nov 2020
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li></ol>
 
 
 </div>
