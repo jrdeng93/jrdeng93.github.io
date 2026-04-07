@@ -19,10 +19,10 @@ social: true  # includes social icons at the bottom of the page
 <p>I hold a <strong>B.Sc. from Queen Mary University of London (QMUL)</strong> and a <strong>B.A. from Beijing University of Posts and Telecommunications (BUPT)</strong> (2016), along with an <strong>M.S. from the University of Texas at Dallas</strong> (2018).</p>
 
 ## Industry Impact
-- <span class="company-heading"><img src="/assets/img/microsoft-logo.svg" alt="Microsoft logo" class="company-logo company-logo-microsoft" /> <strong>Microsoft</strong> <span class="company-years">(2024-2026)</span></span>
+- <span class="company-heading"><img src="/assets/img/microsoft-logo.svg" alt="Microsoft logo" class="company-logo company-logo-microsoft" width="92" height="22" /> <strong>Microsoft</strong> <span class="company-years">(2024-2026)</span></span>
   - **Multimodal AI & Vision-Language Models**: Leading multiagent and multimodal interactive maps experience for IMAIA (accepted in February 2026 at CVPR 2026), focusing on spatial understanding, geospatial intelligence, and cross-modal reasoning; 3 patents filed
   - **Agentic AI & Multi-Agent Systems**: Leading AIOps evolution for Azure Core with agent-based observability systems for autonomous agents, incident triaging, and intelligent reasoning; one research paper accepted in March 2026 at FSE 2026
-- <span class="company-heading"><img src="/assets/img/baidu-research-logo.svg" alt="Baidu Research logo" class="company-logo company-logo-baidu" /> <strong>Baidu Research USA</strong> <span class="company-years">(2022-2023)</span></span>
+- <span class="company-heading"><img src="/assets/img/baidu-research-logo.svg" alt="Baidu Research logo" class="company-logo company-logo-baidu" width="104" height="20" /> <strong>Baidu Research USA</strong> <span class="company-years">(2022-2023)</span></span>
   - Knowledge distillation and diffusion model research (ICASSP Oral, ICIP publications)
 
 ## Selected Publications

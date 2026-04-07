@@ -233,20 +233,27 @@ body.sticky-bottom-footer {
   align-items: center;
   gap: 0.55rem;
   flex-wrap: wrap;
+  vertical-align: middle;
 
   .company-logo {
-    height: 1.15rem;
-    width: auto;
     display: inline-block;
+    width: auto !important;
+    max-width: none !important;
+    height: 1rem !important;
+    max-height: 1rem !important;
+    object-fit: contain;
     vertical-align: middle;
+    flex: 0 0 auto;
   }
 
   .company-logo-microsoft {
-    height: 1.05rem;
+    height: 0.95rem !important;
+    max-height: 0.95rem !important;
   }
 
   .company-logo-baidu {
-    height: 0.95rem;
+    height: 0.9rem !important;
+    max-height: 0.9rem !important;
   }
 
   .company-years {
