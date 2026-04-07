@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 title: Teaching Assistant
 description: 
-nav: True
+nav: false
 ---
 
 

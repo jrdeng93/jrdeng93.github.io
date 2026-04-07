@@ -2,5 +2,7 @@
 layout: post
 date: 2023-11-07 16:11:00-0400
 inline: true
+related_posts: false
+news_type: work
 ---
-I am a Guest Lecturer for UCONN Graduate Course <a href="https://gradcatalog.uconn.edu/course-descriptions/course/CSE/5825/">CSE 5825</a> Bayesian Machine Learning
+Appointed as **Guest Lecturer** for **UConn Graduate Course** [CSE 5825 - Bayesian Machine Learning](https://gradcatalog.uconn.edu/course-descriptions/course/CSE/5825/)!

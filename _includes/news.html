@@ -1,16 +1,29 @@
           
           <div class="news">
-            <h2>news</h2>
+            <h2>News</h2>
             {% if site.news != blank -%} 
             <div class="table-responsive">
               <table class="table table-sm table-borderless">
               {%- assign news = site.news | reverse -%} 
               {% for item in news limit: site.news_limit %} 
+                {%- assign news_type = item.news_type | default: 'paper' -%}
                 <tr>
                   <th scope="row">{{ item.date | date: "%b %Y" }}</th>
                   <td>
+                    <span class="news-item-icon news-item-icon-{{ news_type }}" aria-hidden="true">
+                      {% case news_type %}
+                        {% when 'award' %}
+                          <i class="fas fa-award"></i>
+                        {% when 'work' %}
+                          <i class="fas fa-briefcase"></i>
+                        {% when 'reviewer' %}
+                          <i class="fas fa-user-check"></i>
+                        {% else %}
+                          <i class="fas fa-file-alt"></i>
+                      {% endcase %}
+                    </span>
                     {% if item.inline -%} 
-                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                      <span class="news-item-content">{{ item.content | remove: '<p>' | remove: '</p>' | emojify }}</span>
                     {%- else -%} 
                       <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
                     {%- endif %} 

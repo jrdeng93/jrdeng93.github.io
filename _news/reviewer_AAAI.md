@@ -2,5 +2,7 @@
 layout: post
 date: 2023-09-07 16:11:00-0400
 inline: true
+related_posts: false
+news_type: reviewer
 ---
-I served as a reviewer for The 38th Annual AAAI Conference on Artificial Intelligence (AAAI 2024).
+Invited to serve as a reviewer for **AAAI 2024** - Helping advance the field through rigorous peer review.

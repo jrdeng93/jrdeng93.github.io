@@ -2,5 +2,7 @@
 layout: post
 date: 2021-06-07 16:11:00-0400
 inline: true
+related_posts: false
+news_type: work
 ---
-I started my internship in Oak Ridge National Laboratory. (<b>ORNL</b>)
+Internship at **Oak Ridge National Laboratory (ORNL)** - Collaborating on cutting-edge scientific research with national labs.

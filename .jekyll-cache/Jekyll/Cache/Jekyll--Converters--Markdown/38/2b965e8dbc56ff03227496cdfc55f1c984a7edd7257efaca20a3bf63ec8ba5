@@ -1,0 +1,27 @@
+I"ö	<p>I am a <strong>Lead AI Engineer with research focus at Capital One AI Foundation team</strong>, working on next-generation AI systems. I obtained my <strong>Ph.D. from the School of Computing</strong> at the <a href="https://uconn.edu"><b><i>University of Connecticut (UCONN)</i></b></a>, advised by Professor <a href="https://www.derekaguiar.com/"><b><i>Derek Aguiar</i></b></a> in the <a href="https://bayesomicslab.github.io/"><b><i>EL GATO Lab</i></b></a>.</p>
+
+<p>I hold a <strong>B.Sc. from Queen Mary University of London (QMUL)</strong> and a <strong>B.A. from Beijing University of Posts and Telecommunications (BUPT)</strong> (2016), along with an <strong>M.S. from the University of Texas at Dallas</strong> (2018).</p>
+
+<h2 id="industry-impact">Industry Impact</h2>
+<ul>
+  <li><span class="company-heading"><img src="/assets/img/microsoft-logo.svg" alt="Microsoft logo" class="company-logo company-logo-microsoft" /> <strong>Microsoft</strong> <span class="company-years">(2024-2026)</span></span>
+    <ul>
+      <li><strong>Multimodal AI &amp; Vision-Language Models</strong>: Leading multiagent and multimodal interactive maps experience for IMAIA (accepted in February 2026 at CVPR 2026), focusing on spatial understanding, geospatial intelligence, and cross-modal reasoning; 3 patents filed</li>
+      <li><strong>Agentic AI &amp; Multi-Agent Systems</strong>: Leading AIOps evolution for Azure Core with agent-based observability systems for autonomous agents, incident triaging, and intelligent reasoning; one research paper accepted in March 2026 at FSE 2026</li>
+    </ul>
+  </li>
+  <li><span class="company-heading"><img src="/assets/img/baidu-research-logo.svg" alt="Baidu Research logo" class="company-logo company-logo-baidu" /> <strong>Baidu Research USA</strong> <span class="company-years">(2022-2023)</span></span>
+    <ul>
+      <li>Knowledge distillation and diffusion model research (ICASSP Oral, ICIP publications)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="selected-publications">Selected Publications</h2>
+<ul>
+  <li><strong>CVPR 2026</strong> - IMAIA: Interactive Maps AI Assistant for Travel Planning and Geo-Spatial Intelligence (Microsoft AI)</li>
+  <li><strong>FSE 2026</strong> - An Agentic Framework for Triaging Incidents in Production Cloud Infrastructure (Microsoft Azure AIOps)</li>
+  <li><strong>ICASSP 2024 (Oral)</strong> - GBSD: Generative Bokeh with Stage Diffusion (Baidu Research)</li>
+  <li><strong>EMNLP 2021 (Oral)</strong> - A Secure and Efficient Federated Learning Framework for NLP</li>
+</ul>
+:ET

@@ -2,5 +2,7 @@
 layout: post
 date: 2023-09-07 16:11:00-0400
 inline: true
+related_posts: false
+news_type: reviewer
 ---
-I will serve as a reviewer for SIAM Conference on Data Mining (SDM24).
+Invited to serve as a reviewer for **SDM 2024** - SIAM Conference on Data Mining.
