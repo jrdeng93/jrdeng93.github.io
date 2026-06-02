@@ -83,9 +83,13 @@ panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 # Blog
 # -----------------------------------------------------------------------------
 
-# blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
+blog_name: blog
 # blog_description: a simple whitespace theme for academics
 # permalink: /blog/:year/:title/
+
+hashnode_blog_url: https://blog.jieren-deng.com
+hashnode_publication_host: blog.jieren-deng.com
+hashnode_featured_posts: 3
 
 # # Pagination
 # pagination:

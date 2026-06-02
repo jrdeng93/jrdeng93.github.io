@@ -223,6 +223,119 @@ body.sticky-bottom-footer {
   }
 }
 
+.latest-writing-section {
+  margin: 3rem 0 2.5rem;
+
+  .latest-writing-heading {
+    margin-bottom: 1.25rem;
+
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-bottom: 0.65rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 2.5rem;
+        height: 3px;
+        background: var(--global-theme-color);
+        border-radius: 2px;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      max-width: 46rem;
+      color: var(--global-text-color-light);
+      line-height: 1.7;
+    }
+  }
+
+  .latest-writing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+
+  .latest-writing-card,
+  .latest-writing-empty {
+    background: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 16px;
+    padding: 1.25rem 1.2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  .latest-writing-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.08);
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      line-height: 1.35;
+      margin-bottom: 0.65rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--global-text-color);
+      text-decoration: none;
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .latest-writing-eyebrow {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--global-theme-color);
+    margin-bottom: 0.7rem;
+    font-weight: 700;
+  }
+
+  .latest-writing-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 1rem;
+
+    span {
+      border-radius: 999px;
+      background: var(--global-code-bg-color);
+      color: var(--global-theme-color);
+      font-size: 0.8rem;
+      padding: 0.28rem 0.65rem;
+      font-weight: 500;
+    }
+  }
+
+  .latest-writing-cta {
+    margin-top: 1rem;
+    margin-bottom: 0;
+
+    a {
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+}
+
 // Selected papers styling
 .selected-papers {
   margin: 2rem 0;

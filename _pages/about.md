@@ -10,6 +10,7 @@ profile:
     <p>what doesn't kill you makes you stronger</p>
 
 news: true  # includes a list of news items
+latest_writing: true
 selected_papers: false # hides the selected publications section on the home page
 social: true  # includes social icons at the bottom of the page
 ---

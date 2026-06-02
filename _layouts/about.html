@@ -43,6 +43,10 @@ layout: default
             {{ content }}
           </div>
 
+          {% if page.latest_writing -%}
+          {%- include latest_writing.html -%}
+          {%- endif %}
+
           {% if page.news -%}
           <!-- News -->
           {%- include news.html %}

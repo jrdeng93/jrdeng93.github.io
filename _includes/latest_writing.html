@@ -1,0 +1,37 @@
+<section class="latest-writing-section">
+  <div class="latest-writing-heading">
+    <h2>Latest Writing</h2>
+    <p>
+      Long-form essays published on Hashnode, with the full archive living at
+      <a href="{{ site.hashnode_blog_url }}" target="_blank" rel="noopener noreferrer">{{ site.hashnode_publication_host }}</a>.
+    </p>
+  </div>
+
+  {% if site.hashnode_publication_host and site.hashnode_publication_host != "yourblog.hashnode.dev" %}
+    <div
+      id="latest-writing-feed"
+      class="latest-writing-grid"
+      data-hashnode-host="{{ site.hashnode_publication_host }}"
+      data-post-limit="{{ site.hashnode_featured_posts | default: 3 }}"
+    >
+      <article class="latest-writing-card latest-writing-card-loading">
+        <p class="latest-writing-eyebrow">Loading</p>
+        <h3>Fetching recent posts from Hashnode...</h3>
+        <p>This homepage module stays lightweight and reads from Hashnode at runtime.</p>
+      </article>
+    </div>
+  {% else %}
+    <div class="latest-writing-empty">
+      <p>
+        Set <code>hashnode_blog_url</code> and <code>hashnode_publication_host</code> in
+        <code>_config.yml</code> to show your latest posts here.
+      </p>
+    </div>
+  {% endif %}
+
+  <p class="latest-writing-cta">
+    <a href="{{ site.hashnode_blog_url }}" target="_blank" rel="noopener noreferrer">
+      Visit the full blog <i class="fas fa-arrow-right fa-sm"></i>
+    </a>
+  </p>
+</section>
