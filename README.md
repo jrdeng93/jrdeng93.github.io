@@ -30,7 +30,7 @@ If your local Ruby version does not match the locked Bundler/Jekyll versions, lo
 
 ## Deployment
 
-This project now deploys from `master` using GitHub Pages automatic builds.
+This project now deploys from `master` using a custom GitHub Actions Pages workflow.
 
 Recommended flow:
 
@@ -48,7 +48,8 @@ Or use the small helper:
 
 Notes:
 
-- GitHub Pages is the build system of record for this repo.
+- Pushing to `master` triggers `.github/workflows/pages.yml`.
+- GitHub Pages should be configured to use `GitHub Actions` as the source.
 - Local Jekyll builds are optional and currently depend on matching the locked Ruby/Bundler versions in `Gemfile.lock`.
 - `bin/deploy` is a legacy script from the older `al-folio` branch-splitting workflow. It is kept only for reference and should not be used for normal updates.
 
