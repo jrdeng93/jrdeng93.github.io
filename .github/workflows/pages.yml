@@ -36,7 +36,7 @@ jobs:
       - name: Build site
         env:
           JEKYLL_ENV: production
-        run: bundle exec jekyll build --trace
+        run: bundle exec jekyll build --trace --baseurl ""
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
