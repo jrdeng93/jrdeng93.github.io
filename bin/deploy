@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
-# Run this script to deploy the app to Github Pages
+# Legacy deployment helper kept for reference.
+#
+# IMPORTANT:
+# This repository now deploys by pushing source changes to `master` and letting
+# GitHub Pages build the site remotely. Do not use this script for normal
+# updates unless you intentionally want the old branch-splitting flow.
+#
+# Use `site_update.sh` for the current deployment workflow.
 
 # Parse cmd arguments
 
@@ -46,6 +53,15 @@ done
 
 # Exit if any subcommand fails
 set -e
+
+echo "Legacy deploy script detected."
+echo "This repo now deploys from 'master' via GitHub Pages automatic builds."
+echo "If you really want the old local-build flow, re-run with:"
+echo "  LEGACY_DEPLOY=1 $0 $*"
+
+if [[ "${LEGACY_DEPLOY}" != "1" ]]; then
+    exit 1
+fi
 
 echo "Deploying..."
 echo "Source branch: $SRC_BRANCH"

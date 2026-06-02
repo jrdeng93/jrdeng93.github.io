@@ -30,28 +30,27 @@ If your local Ruby version does not match the locked Bundler/Jekyll versions, lo
 
 ## Deployment
 
-This project uses a manual deployment flow.
+This project now deploys from `master` using GitHub Pages automatic builds.
 
-The helper script is:
-
-```bash
-./bin/deploy
-```
-
-The intended flow in `site_update.sh` is:
+Recommended flow:
 
 ```bash
 git add .
 git commit -m "your message"
-./bin/deploy
-git push
+git push origin master
 ```
 
-In practice, `./bin/deploy`:
+Or use the small helper:
 
-- checks for a clean working tree
-- builds the site
-- publishes the generated output to `gh-pages`
+```bash
+./site_update.sh "your message"
+```
+
+Notes:
+
+- GitHub Pages is the build system of record for this repo.
+- Local Jekyll builds are optional and currently depend on matching the locked Ruby/Bundler versions in `Gemfile.lock`.
+- `bin/deploy` is a legacy script from the older `al-folio` branch-splitting workflow. It is kept only for reference and should not be used for normal updates.
 
 ## Content Notes
 
