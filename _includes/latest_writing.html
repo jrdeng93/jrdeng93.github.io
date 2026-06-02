@@ -7,7 +7,32 @@
     </p>
   </div>
 
-  {% if site.hashnode_publication_host and site.hashnode_publication_host != "yourblog.hashnode.dev" %}
+  {% assign writing_items = site.latest_writing_items | default: empty %}
+
+  {% if writing_items.size > 0 %}
+    <div class="latest-writing-grid">
+      {% for item in writing_items limit: site.hashnode_featured_posts %}
+        <article class="latest-writing-card">
+          {% if item.date or item.read_time %}
+            <p class="latest-writing-eyebrow">
+              {% if item.date %}{{ item.date }}{% endif %}{% if item.date and item.read_time %} · {% endif %}{% if item.read_time %}{{ item.read_time }}{% endif %}
+            </p>
+          {% endif %}
+          <h3><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></h3>
+          {% if item.brief %}
+            <p>{{ item.brief }}</p>
+          {% endif %}
+          {% if item.tags %}
+            <div class="latest-writing-tags">
+              {% for tag in item.tags %}
+                <span>{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  {% elsif site.hashnode_dynamic_fetch and site.hashnode_publication_host and site.hashnode_publication_host != "yourblog.hashnode.dev" %}
     <div
       id="latest-writing-feed"
       class="latest-writing-grid"
@@ -17,14 +42,14 @@
       <article class="latest-writing-card latest-writing-card-loading">
         <p class="latest-writing-eyebrow">Loading</p>
         <h3>Fetching recent posts from Hashnode...</h3>
-        <p>This homepage module stays lightweight and reads from Hashnode at runtime.</p>
+        <p>This module is using the optional runtime fetch mode.</p>
       </article>
     </div>
   {% else %}
     <div class="latest-writing-empty">
       <p>
-        Set <code>hashnode_blog_url</code> and <code>hashnode_publication_host</code> in
-        <code>_config.yml</code> to show your latest posts here.
+        Add a few entries to <code>latest_writing_items</code> in <code>_config.yml</code> to feature
+        selected posts here. This is the most reliable option for Hashnode-hosted blogs.
       </p>
     </div>
   {% endif %}

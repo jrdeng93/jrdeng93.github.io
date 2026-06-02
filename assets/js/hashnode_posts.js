@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       <article class="latest-writing-card latest-writing-card-empty">
         <p class="latest-writing-eyebrow">Connection issue</p>
         <h3>Couldn't load posts from Hashnode.</h3>
-        <p>Please verify the publication host in <code>_config.yml</code>.</p>
+        <p>Switch to manual <code>latest_writing_items</code> entries if your blog doesn't expose a public API feed.</p>
       </article>
     `;
     console.error(error);
