@@ -96,12 +96,12 @@ latest_writing_items:
   - title: "From Stack Overflow to Agentic Engineering: My Journey with AI Coding"
     url: "https://blog.jieren-deng.com/from-stack-overflow-to-agentic-engineering-my-journey-with-ai-coding"
     date: "June 2026"
-    read_time: "Featured post"
-    brief: "A personal reflection on how AI coding changed the path from searching for answers to building with autonomous engineering workflows."
+    read_time: "Essay"
+    brief: "A first-person essay on how coding evolved from keyword search and copy-paste debugging into a more agentic, collaborative workflow with AI."
     tags:
-      - ai
-      - agentic engineering
-      - coding
+      - AI Coding
+      - Agentic Engineering
+      - Personal Essay
 
 # # Pagination
 # pagination:
