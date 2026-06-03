@@ -92,15 +92,16 @@ hashnode_blog_url: https://blog.jieren-deng.com
 hashnode_publication_host: blog.jieren-deng.com
 hashnode_featured_posts: 3
 hashnode_dynamic_fetch: false
-# latest_writing_items:
-#   - title: "Your post title"
-#     url: "https://blog.jieren-deng.com/your-post-slug"
-#     date: "June 1, 2026"
-#     read_time: "6 min read"
-#     brief: "One or two lines describing why this post is worth opening."
-#     tags:
-#       - ai
-#       - engineering
+latest_writing_items:
+  - title: "From Stack Overflow to Agentic Engineering: My Journey with AI Coding"
+    url: "https://blog.jieren-deng.com/from-stack-overflow-to-agentic-engineering-my-journey-with-ai-coding"
+    date: "June 2026"
+    read_time: "Featured post"
+    brief: "A personal reflection on how AI coding changed the path from searching for answers to building with autonomous engineering workflows."
+    tags:
+      - ai
+      - agentic engineering
+      - coding
 
 # # Pagination
 # pagination:
