@@ -31,3 +31,4 @@ social: true  # includes social icons at the bottom of the page
 - **FSE 2026** - An Agentic Framework for Triaging Incidents in Production Cloud Infrastructure (Microsoft Azure AIOps)
 - **ICASSP 2024 (Oral)** - GBSD: Generative Bokeh with Stage Diffusion (Baidu Research)
 - **EMNLP 2021 (Oral)** - A Secure and Efficient Federated Learning Framework for NLP
+- **EMNLP 2021** - TAG: Gradient Attack on Transformer-based Language Models
