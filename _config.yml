@@ -103,6 +103,25 @@ latest_writing_items:
       - Agentic Engineering
       - Personal Essay
 
+open_source_projects:
+  - title: "uscis-case-API-monitor"
+    repo_url: "https://github.com/jrdeng93/uscis-case-API-monitor"
+    description: "A USCIS case monitor that combines Playwright-based authentication, API polling, JSON diffing, and notifications to reduce manual status checking."
+    highlight: "Personal pain point turned into a durable automation system."
+    tags:
+      - Playwright
+      - Node.js
+      - Automation
+      - Notifications
+  - title: "CreditCardMaster"
+    repo_url: "https://github.com/jrdeng93/CreditCardMaster"
+    description: "An open source credit card recommendation tool for comparing options and surfacing the best fit through a simpler decision flow."
+    highlight: "A practical consumer-facing project with product-style UX thinking."
+    tags:
+      - JavaScript
+      - Product Design
+      - Decision Tool
+
 # # Pagination
 # pagination:
 #   enabled: false

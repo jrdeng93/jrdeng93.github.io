@@ -43,8 +43,22 @@ layout: default
             {{ content }}
           </div>
 
-          {% if page.latest_writing -%}
-          {%- include latest_writing.html -%}
+          {% if page.latest_writing or page.open_source_projects -%}
+          <section class="editorial-showcase">
+          <div class="about-feature-grid">
+            {% if page.latest_writing -%}
+            <div class="about-feature-column about-feature-column-writing">
+              {%- include latest_writing.html -%}
+            </div>
+            {%- endif %}
+
+            {% if page.open_source_projects -%}
+            <div class="about-feature-column about-feature-column-projects">
+              {%- include open_source_projects.html -%}
+            </div>
+            {%- endif %}
+          </div>
+          </section>
           {%- endif %}
 
           {% if page.news -%}

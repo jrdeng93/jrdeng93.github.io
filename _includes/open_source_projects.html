@@ -1,0 +1,49 @@
+<section class="open-source-section" id="github-open-source">
+  <div class="open-source-heading">
+    <h2>
+      GitHub Open Source
+      <a href="https://github.com/jrdeng93" target="_blank" rel="noopener noreferrer" class="open-source-profile-link" aria-label="View GitHub profile">
+        <i class="fab fa-github"></i>
+      </a>
+    </h2>
+    <p>
+      A few public projects that reflect how I like to build: practical automation,
+      product-minded tools, and systems that stay useful after the first demo.
+    </p>
+  </div>
+
+  {% assign oss_projects = site.open_source_projects | default: empty %}
+
+  {% if oss_projects.size > 0 %}
+    <div class="open-source-grid">
+      {% for project in oss_projects %}
+        <article class="open-source-card">
+          <p class="open-source-eyebrow">Public Repository</p>
+          <h3>
+            <a href="{{ project.repo_url }}" target="_blank" rel="noopener noreferrer">
+              {{ project.title }}
+            </a>
+          </h3>
+          {% if project.description %}
+            <p class="open-source-description">{{ project.description }}</p>
+          {% endif %}
+          {% if project.highlight %}
+            <p class="open-source-highlight">{{ project.highlight }}</p>
+          {% endif %}
+          {% if project.tags %}
+            <div class="open-source-tags">
+              {% for tag in project.tags %}
+                <span>{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+          <p class="open-source-cta">
+            <a href="{{ project.repo_url }}" target="_blank" rel="noopener noreferrer">
+              View repository <i class="fas fa-arrow-right fa-sm"></i>
+            </a>
+          </p>
+        </article>
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
