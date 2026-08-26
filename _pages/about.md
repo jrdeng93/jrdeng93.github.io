@@ -18,7 +18,7 @@ social: true  # includes social icons at the bottom of the page
 
 <p>I am a <strong>Lead AI Engineer with research focus at Capital One AI Foundation team</strong>, working on next-generation AI systems. I obtained my <strong>Ph.D. from the School of Computing</strong> at the <a href="https://uconn.edu"><b><i>University of Connecticut (UCONN)</i></b></a>, advised by Professor <a href="https://www.derekaguiar.com/"><b><i>Derek Aguiar</i></b></a> in the <a href="https://bayesomicslab.github.io/"><b><i>EL GATO Lab</i></b></a>.</p>
 
-<p>Outside work, I enjoy writing <a href="https://blog.jieren-deng.com/" target="_blank" rel="noopener noreferrer">tech blogs</a> and building <a href="https://github.com/jrdeng93" target="_blank" rel="noopener noreferrer">open source projects</a>. I like turning practical ideas into tools that make everyday workflows simpler, faster, and more useful.</p>
+<p>Outside work, I share <a href="https://www.linkedin.com/in/jieren-deng/recent-activity/articles/" target="_blank" rel="noopener noreferrer">essays on AI and engineering</a> on LinkedIn and build <a href="https://github.com/jrdeng93" target="_blank" rel="noopener noreferrer">open source projects</a>. I like turning practical ideas into tools that make everyday workflows simpler, faster, and more useful.</p>
 
 ## Industry Impact
 <div class="impact-list">

@@ -36,7 +36,7 @@
               {% if site.blog_name %}
               <!-- Blog -->
               <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                <a class="nav-link" href="{% if site.hashnode_blog_url and site.hashnode_blog_url != 'https://yourblog.hashnode.dev' %}{{ site.hashnode_blog_url }}{% else %}{{ '/blog/' | relative_url }}{% endif %}" {% if site.hashnode_blog_url and site.hashnode_blog_url != 'https://yourblog.hashnode.dev' %}target="_blank" rel="noopener noreferrer"{% endif %}>blog
+                <a class="nav-link" href="{% if site.writing_url %}{{ site.writing_url }}{% else %}{{ '/blog/' | relative_url }}{% endif %}" {% if site.writing_url %}target="_blank" rel="noopener noreferrer"{% endif %}>blog
                   {%- if page.title == "blog" -%}
                   <span class="sr-only">(current)</span>
                   {%- endif -%}

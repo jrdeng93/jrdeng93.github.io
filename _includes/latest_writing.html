@@ -2,8 +2,8 @@
   <div class="latest-writing-heading">
     <h2>Notes on AI & Engineering</h2>
     <p>
-      Long-form essays published on Hashnode, with the full archive living at
-      <a href="{{ site.hashnode_blog_url }}" target="_blank" rel="noopener noreferrer">{{ site.hashnode_publication_host }}</a>.
+      Practical perspectives on AI systems and engineering. New essays are published on
+      <a href="{{ site.writing_url }}" target="_blank" rel="noopener noreferrer">{{ site.writing_platform_name }}</a>.
     </p>
   </div>
 
@@ -11,11 +11,16 @@
 
   {% if writing_items.size > 0 %}
     <div class="latest-writing-grid{% if writing_items.size == 1 %} latest-writing-grid-single{% endif %}">
-      {% for item in writing_items limit: site.hashnode_featured_posts %}
+      {% for item in writing_items limit: site.writing_featured_posts %}
         <article class="latest-writing-card{% if writing_items.size == 1 %} latest-writing-card-hero{% endif %}">
-          {% if item.date or item.read_time %}
+          {% if item.image %}
+            <a class="latest-writing-cover" href="{{ item.url }}" target="_blank" rel="noopener noreferrer" aria-label="Read {{ item.title }} on {{ item.platform | default: site.writing_platform_name }}">
+              <img src="{{ '/assets/img/' | append: item.image | relative_url }}" alt="Cover for {{ item.title }}" loading="lazy">
+            </a>
+          {% endif %}
+          {% if item.date or item.platform %}
             <p class="latest-writing-eyebrow">
-              {% if item.date %}{{ item.date }}{% endif %}{% if item.date and item.read_time %} · {% endif %}{% if item.read_time %}{{ item.read_time }}{% endif %}
+              {% if item.date %}{{ item.date }}{% endif %}{% if item.date and item.platform %} · {% endif %}{% if item.platform %}{{ item.platform }}{% endif %}
             </p>
           {% endif %}
           <h3><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a></h3>
@@ -39,31 +44,18 @@
         </article>
       {% endfor %}
     </div>
-  {% elsif site.hashnode_dynamic_fetch and site.hashnode_publication_host and site.hashnode_publication_host != "yourblog.hashnode.dev" %}
-    <div
-      id="latest-writing-feed"
-      class="latest-writing-grid"
-      data-hashnode-host="{{ site.hashnode_publication_host }}"
-      data-post-limit="{{ site.hashnode_featured_posts | default: 3 }}"
-    >
-      <article class="latest-writing-card latest-writing-card-loading">
-        <p class="latest-writing-eyebrow">Loading</p>
-        <h3>Fetching recent posts from Hashnode...</h3>
-        <p>This module is using the optional runtime fetch mode.</p>
-      </article>
-    </div>
   {% else %}
     <div class="latest-writing-empty">
       <p>
         Add a few entries to <code>latest_writing_items</code> in <code>_config.yml</code> to feature
-        selected posts here. This is the most reliable option for Hashnode-hosted blogs.
+        selected posts here.
       </p>
     </div>
   {% endif %}
 
   <p class="latest-writing-cta">
-    <a href="{{ site.hashnode_blog_url }}" target="_blank" rel="noopener noreferrer">
-      Visit the full blog <i class="fas fa-arrow-right fa-sm"></i>
+    <a href="{{ site.writing_url }}" target="_blank" rel="noopener noreferrer">
+      View all LinkedIn articles <i class="fas fa-arrow-right fa-sm"></i>
     </a>
   </p>
 </section>

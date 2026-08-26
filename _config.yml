@@ -88,20 +88,21 @@ blog_name: blog
 # blog_description: a simple whitespace theme for academics
 # permalink: /blog/:year/:title/
 
-hashnode_blog_url: https://blog.jieren-deng.com
-hashnode_publication_host: blog.jieren-deng.com
-hashnode_featured_posts: 3
-hashnode_dynamic_fetch: false
+writing_url: "https://www.linkedin.com/in/jieren-deng/recent-activity/articles/"
+writing_platform_name: LinkedIn
+writing_featured_posts: 3
+# Add new LinkedIn articles at the top; the homepage reads this list directly.
 latest_writing_items:
-  - title: "From Stack Overflow to Agentic Engineering: My Journey with AI Coding"
-    url: "https://blog.jieren-deng.com/from-stack-overflow-to-agentic-engineering-my-journey-with-ai-coding"
-    date: "June 2026"
-    read_time: "Essay"
-    brief: "A first-person essay on how coding evolved from keyword search and copy-paste debugging into a more agentic, collaborative workflow with AI."
+  - title: "Agentic Systems in Practice: Latency, Reasoning, Skills, and Token Economics"
+    url: "https://www.linkedin.com/pulse/agentic-systems-practice-latency-reasoning-skills-jieren-deng-ph-d--umqec/"
+    date: "August 2026"
+    platform: "LinkedIn"
+    image: "agentic-systems-linkedin-cover.png"
+    brief: "A practical perspective on how workflow-enhancement, open-ended consumer, and enterprise agents require different trade-offs across latency, reasoning, skills, and cost."
     tags:
-      - AI Coding
-      - Agentic Engineering
-      - Personal Essay
+      - Agentic AI
+      - Reasoning
+      - Multi-Agent Systems
 
 open_source_projects:
   - title: "uscis-case-API-monitor"

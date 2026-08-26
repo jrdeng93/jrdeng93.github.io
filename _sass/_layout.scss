@@ -520,6 +520,26 @@ body.sticky-bottom-footer {
     }
   }
 
+  .latest-writing-cover {
+    display: block;
+    margin: -0.35rem -0.35rem 0.85rem;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1.91 / 1;
+      object-fit: cover;
+      transition: transform 0.25s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.015);
+    }
+  }
+
   .latest-writing-card-hero {
     padding: 1.45rem 1.35rem 1.25rem;
     border-radius: 20px;
